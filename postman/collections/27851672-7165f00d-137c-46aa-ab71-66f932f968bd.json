@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "27851672-7165f00d-137c-46aa-ab71-66f932f968bd",
+		"name": "Value Date",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"id": "27851672-4391b1f7-85eb-47b3-8e7a-3e9a68b046b8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-EVRY-DATAOWNERORGID",
+						"value": "4201",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-usersession",
+						"value": "{\"bankOrgID\": \"4201\",\"userID\": \"e220102\",\"client\": {\"ip\":\"10.10.10.10\"} }",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-securitytoken",
+						"value": "{\"tokenType\": \"EvrySo\", \"token\": \"03111012010400425kglPboRi3h1Q0wGJvxDnjLEmmmyjbdrfsSaabKNt2t%2BCqK3eX2EphONTCSUcmn1BsSaabKNt2t%2BxJppso23a37EmmmyjbdrfyqVfESZ%2BvdaEdNM4lOx0RzgSxAz1%2B8eEsSaabKNt2t%2FXzlyjxYnxhcG46wcbIKp%2FsSaabKNt2t9wBUG0SyIoqFfig80Gq4uXVBtimDzTiu3EfQIWD5xMfk2jSY2FGfvV26qFHJXpC08%3DRScZIBaF5rVbaSQXdfjW7qpDd%2Fx6Uv7yZLZhCUf3MZQpUdJt1NcsZDOjPzj%2FxNUr4iwU0MZPvSc40rnfiJVGhX6lz1BFMma9XVgKg5SRUqBh2Vd0hQRhPCN3LcKOZ%2B4Q6Kstjdn9Jtnmh7ILkD4X%2BB0RNu8YM7rIAPdQI5SLqyM%3D\"}",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-ESB-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-REQUESTID",
+						"value": "${=java.util.UUID.randomUUID().toString()}",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "eTag",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"valueDateRuleFilter\": {\r\n    \"valueDateRuleName\": \"CUT0\"\r\n    // \"applicableForDebit\": false,\r\n    // \"applicableForCredit\": true,\r\n    // \"preCalculationPossible\": true\r\n  },\r\n  \"pagingElement\": {\r\n    \"startIndex\": 0,\r\n    \"pageSize\": 500\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.246.89.245:10450/pbdsrv/api/v6/valuedaterule/list",
+					"protocol": "http",
+					"host": [
+						"10",
+						"246",
+						"89",
+						"245"
+					],
+					"port": "10450",
+					"path": [
+						"pbdsrv",
+						"api",
+						"v6",
+						"valuedaterule",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
