@@ -21,50 +21,50 @@
 							{
 								"key": "X-EVRY-ESB-SECURITYTOKEN",
 								"value": "{\"tokenType\": \"EvrySo\", \"token\": \"03111012010400425AdKgR8BG0YGmiFEfy9tMRbEmmmyjbdrfsSaabKNt2t+SrYJamVorhYAPV/PfwJA2sSaabKNt2t+xJppso23a37Emmmyjbdrffwv4hnlU8hAEKHRkMKu7thS7nMHpidx8Dc+KFZqOWSnXzlyjxYnxhRjwk65peqQrzE/U60uSoC9wBUG0SyIoqFfig80Gq4uXVBtimDzTiu3EfQIWD5xMfqSGHxrDKJq00XlUU9wiDeQ=T73q0AO0ghUHNi0Cg6thCA0N4xquOjRq4X/c/C1uIGqeLkJ02Kxcs08ONIOhUlAeMT/lJ5IIAxaigzi0WUjOyyEnCnWoKtckCOMuia49fvZgis8KEyaYGlXkHJ02YKmoCSV7SwIrwLLf/+vDiJuljRfb5SyfZQpc/AXOO/FgHkg=\"}",
-								"type": "text",
-								"description": "(Required) Identifies the source sending the request. Used to separate different service consumers.\nName should identify customer (bank) and consumer 'application'. The format of the field is 'Organization name'-'Application name'.\n"
+								"description": "(Required) Identifies the source sending the request. Used to separate different service consumers.\nName should identify customer (bank) and consumer 'application'. The format of the field is 'Organization name'-'Application name'.\n",
+								"type": "text"
 							},
 							{
 								"key": "X-EVRY-ESB-USERSESSION",
 								"value": "{\"bankOrgID\": \"4210\",\"userID\": \"e220102\",\"client\": {\"ip\":\"10.10.10.10\"} }",
-								"type": "text",
-								"description": "(Required) Unique log reference, generated on the client, and must be unique across multiple sessions and days."
+								"description": "(Required) Unique log reference, generated on the client, and must be unique across multiple sessions and days.",
+								"type": "text"
 							},
 							{
 								"key": "X-EVRY-ESB-CLIENTNAME",
 								"value": "pen",
-								"type": "text",
-								"description": "If request origins from a mobile device, this is set to TRUE, else FALSE or not present"
+								"description": "If request origins from a mobile device, this is set to TRUE, else FALSE or not present",
+								"type": "text"
 							},
 							{
 								"key": "X-EVRY-CLIENT-CLIENTNAME",
 								"value": "pen",
-								"type": "text",
-								"description": "Defines the Signature in the request. Used in accordance with these [specifications](https://datatracker.ietf.org/doc/draft-cavage-http-signatures/)\n"
+								"description": "Defines the Signature in the request. Used in accordance with these [specifications](https://datatracker.ietf.org/doc/draft-cavage-http-signatures/)\n",
+								"type": "text"
 							},
 							{
 								"key": "X-EVRY-CLIENT-REQUESTID",
 								"value": "${=java.util.UUID.randomUUID().toString()}",
-								"type": "text",
-								"description": "Defines the Digest in the request. Used in accordance with [specifications](https://datatracker.ietf.org/doc/draft-cavage-http-signatures/Digest),\nand is mandatory for all requests containing body.\n"
+								"description": "Defines the Digest in the request. Used in accordance with [specifications](https://datatracker.ietf.org/doc/draft-cavage-http-signatures/Digest),\nand is mandatory for all requests containing body.\n",
+								"type": "text"
 							},
 							{
 								"key": "content-language",
 								"value": "en",
-								"type": "text",
-								"description": "Identifies the organization, will in a banking context be the Financial Institution (Konsernnr) registered in the banking infrastructure.."
+								"description": "Identifies the organization, will in a banking context be the Financial Institution (Konsernnr) registered in the banking infrastructure..",
+								"type": "text"
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text",
-								"description": "Identifies the person or system initiating the request.\nNormally this field is set equally to customerid, but should be set to the id of Employee/Agent/Retail/System if request is initiated on behalf of the customerid.\n* Private user accessing his own data: SSN (Social Security Number) of the user\n* Corporate user accessing data of a corporate customer: SSN (Social Security Number) of the user\n* Branch bank employee accessing data of a customer: Logonid of the bank employee\n"
+								"value": "application/jso",
+								"description": "Identifies the person or system initiating the request.\nNormally this field is set equally to customerid, but should be set to the id of Employee/Agent/Retail/System if request is initiated on behalf of the customerid.\n* Private user accessing his own data: SSN (Social Security Number) of the user\n* Corporate user accessing data of a corporate customer: SSN (Social Security Number) of the user\n* Branch bank employee accessing data of a customer: Logonid of the bank employee\n",
+								"type": "text"
 							},
 							{
 								"key": "eTag",
 								"value": "2",
-								"type": "text",
 								"description": "Identifies the customer for which this request is initiated.\nShould be set equal to the SSN customer number 11 digits for private customers and the organization number 11 digits with leading zeroes for corporates.\n* Private user accessing his own data: SSN (Social Security Number) of the user\n* Corporate user accessing data of a corporate customer: Organization Number (Foretaksnummer) of the corporate customer\n* Branch bank employee accessing data of a customer: SSN of the user if private customer, Organization Number (Foretaksnummer) if corporate customer\n",
+								"type": "text",
 								"disabled": true
 							}
 						],
