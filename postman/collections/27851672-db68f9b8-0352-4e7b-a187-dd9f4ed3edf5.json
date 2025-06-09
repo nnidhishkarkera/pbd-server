@@ -1,0 +1,1266 @@
+{
+	"info": {
+		"_postman_id": "27851672-db68f9b8-0352-4e7b-a187-dd9f4ed3edf5",
+		"name": "Verifier- V6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "list",
+			"id": "27851672-568f2227-a4f2-418b-a4a1-533e2f0919a1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-EVRY-DATAOWNERORGID",
+						"value": "3995",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-usersession",
+						"value": "{\"bankOrgID\": \"3995\",\"userID\": \"e220102\",\"client\": {\"ip\":\"10.10.10.10\"} }",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-securitytoken",
+						"value": "{\"tokenType\": \"EvrySo\", \"token\": \"03111012010400425kglPboRi3h1Q0wGJvxDnjLEmmmyjbdrfsSaabKNt2t%2BCqK3eX2EphONTCSUcmn1BsSaabKNt2t%2BxJppso23a37EmmmyjbdrfyqVfESZ%2BvdaEdNM4lOx0RzgSxAz1%2B8eEsSaabKNt2t%2FXzlyjxYnxhcG46wcbIKp%2FsSaabKNt2t9wBUG0SyIoqFfig80Gq4uXVBtimDzTiu3EfQIWD5xMfk2jSY2FGfvV26qFHJXpC08%3DRScZIBaF5rVbaSQXdfjW7qpDd%2Fx6Uv7yZLZhCUf3MZQpUdJt1NcsZDOjPzj%2FxNUr4iwU0MZPvSc40rnfiJVGhX6lz1BFMma9XVgKg5SRUqBh2Vd0hQRhPCN3LcKOZ%2B4Q6Kstjdn9Jtnmh7ILkD4X%2BB0RNu8YM7rIAPdQI5SLqyM%3D\"}",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-ESB-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-REQUESTID",
+						"value": "${=java.util.UUID.randomUUID().toString()}",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "eTag",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n  \"pagingElement\": {\r\n    \"startIndex\": 0,\r\n    \"pageSize\": 10\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.246.89.245:10450/pbdsrv/api/v6/verifier/list",
+					"protocol": "http",
+					"host": [
+						"10",
+						"246",
+						"89",
+						"245"
+					],
+					"port": "10450",
+					"path": [
+						"pbdsrv",
+						"api",
+						"v6",
+						"verifier",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list Copy",
+			"id": "27851672-831941e9-e29c-47ac-987f-611797f302b0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-EVRY-DATAOWNERORGID",
+						"value": "2544",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-usersession",
+						"value": "{\"bankOrgID\": \"2544\",\"userID\": \"e220102\",\"client\": {\"ip\":\"10.10.10.10\"} }",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-securitytoken",
+						"value": "{\"tokenType\": \"EvrySo\", \"token\": \"031110130104004250tu4YEEzPmBtrqnqspzaepmTJZQe+Fzz/RASphHZEo9Vo+zq0WRhPZ/P3hY9BTDejrSIpQnXuqKD/MjoNuGS8Y6NSXSWqPOewBRj1uby9vKfCL5Urruo0hONdxZ1ICUePyX8iewyOYA19Dp2kOEGSVw9t5XJ2AbQIeuh+FQuo761gSbV8PL7TnEYVTVAJx4r68CQtGWcP1JJdSy2emkS3xHQXosP20Jg9/p5TfEk7KY=hPaW8TS383Thxvlf6vcBoBgBG1ze3QkjkFcMjkvRsoc466hX5PxrNBdDrop/49IIYuGF+KMR7CmZhSPFB/oHP5wiXZX4S4qohu3nDXid3L60Tlp87i3o03bj1KYx7DF61J7wUMJV7toXpn2nBq9raxj2t21FEFF8ocA6gBLN2R0=\"}",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-ESB-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-REQUESTID",
+						"value": "${=java.util.UUID.randomUUID().toString()}",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "eTag",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numberOfVerifierCriteria\": {\r\n    // \"pk\": 0,\r\n    // \"version\": 0,\r\n    \"numberOfVerifierId\": 33,\r\n    // \"bankName\": \"string\",\r\n    \"systemName\": \"Payment Initiation\",\r\n    \"areaName\": \"Verify payment\",\r\n    // \"taskName\": \"string\",\r\n    // \"numberOfVerifier\": 3,\r\n    // \"rangeAmountDetails\": {\r\n    //   \"rangeFromAmount\": 0,\r\n    //   \"rangeToAmount\": 0,\r\n    //   \"baseCurrencyCode\": \"string\",\r\n    //   \"rangeNumberOfVerifier\": 3\r\n    // },\r\n    // \"startDate\": \"2016-01-05\",\r\n    // \"endDate\": \"2025-05-28\",\r\n    \"changeStatus\": \"ACTIVE\"\r\n  },\r\n  \"pagingElement\": {\r\n    \"startIndex\": 0,\r\n    \"pageSize\": 500\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.246.89.245:10780/pbdsrv/api/v6/verifier/list",
+					"protocol": "http",
+					"host": [
+						"10",
+						"246",
+						"89",
+						"245"
+					],
+					"port": "10780",
+					"path": [
+						"pbdsrv",
+						"api",
+						"v6",
+						"verifier",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify system list",
+			"id": "27851672-e78fb3d0-4d2d-48b1-b698-7d752ad22496",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-EVRY-DATAOWNERORGID",
+						"value": "4201",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-usersession",
+						"value": "{\"bankOrgID\": \"4201\",\"userID\": \"e220102\",\"client\": {\"ip\":\"10.10.10.10\"} }",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-securitytoken",
+						"value": "{\"tokenType\": \"EvrySo\", \"token\": \"03111012010400425kglPboRi3h1Q0wGJvxDnjLEmmmyjbdrfsSaabKNt2t%2BCqK3eX2EphONTCSUcmn1BsSaabKNt2t%2BxJppso23a37EmmmyjbdrfyqVfESZ%2BvdaEdNM4lOx0RzgSxAz1%2B8eEsSaabKNt2t%2FXzlyjxYnxhcG46wcbIKp%2FsSaabKNt2t9wBUG0SyIoqFfig80Gq4uXVBtimDzTiu3EfQIWD5xMfk2jSY2FGfvV26qFHJXpC08%3DRScZIBaF5rVbaSQXdfjW7qpDd%2Fx6Uv7yZLZhCUf3MZQpUdJt1NcsZDOjPzj%2FxNUr4iwU0MZPvSc40rnfiJVGhX6lz1BFMma9XVgKg5SRUqBh2Vd0hQRhPCN3LcKOZ%2B4Q6Kstjdn9Jtnmh7ILkD4X%2BB0RNu8YM7rIAPdQI5SLqyM%3D\"}",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-ESB-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-REQUESTID",
+						"value": "${=java.util.UUID.randomUUID().toString()}",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "eTag",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"systemName\": \"Standing Orders\",\r\n  \"pagingElement\": {\r\n    \"startIndex\": 0,\r\n    \"pageSize\": 500\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.246.89.245:10450/pbdsrv/api/v6/verifier/verifiersystemlist",
+					"protocol": "http",
+					"host": [
+						"10",
+						"246",
+						"89",
+						"245"
+					],
+					"port": "10450",
+					"path": [
+						"pbdsrv",
+						"api",
+						"v6",
+						"verifier",
+						"verifiersystemlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read",
+			"id": "27851672-bc10c4ef-4bfd-4e8e-bfc8-5b6e1c0e4aba",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-EVRY-DATAOWNERORGID",
+						"value": "4201",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-usersession",
+						"value": "{\"bankOrgID\": \"4201\",\"userID\": \"e220102\",\"client\": {\"ip\":\"10.10.10.10\"} }",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-securitytoken",
+						"value": "{\"tokenType\": \"EvrySo\", \"token\": \"03111012010400425kglPboRi3h1Q0wGJvxDnjLEmmmyjbdrfsSaabKNt2t%2BCqK3eX2EphONTCSUcmn1BsSaabKNt2t%2BxJppso23a37EmmmyjbdrfyqVfESZ%2BvdaEdNM4lOx0RzgSxAz1%2B8eEsSaabKNt2t%2FXzlyjxYnxhcG46wcbIKp%2FsSaabKNt2t9wBUG0SyIoqFfig80Gq4uXVBtimDzTiu3EfQIWD5xMfk2jSY2FGfvV26qFHJXpC08%3DRScZIBaF5rVbaSQXdfjW7qpDd%2Fx6Uv7yZLZhCUf3MZQpUdJt1NcsZDOjPzj%2FxNUr4iwU0MZPvSc40rnfiJVGhX6lz1BFMma9XVgKg5SRUqBh2Vd0hQRhPCN3LcKOZ%2B4Q6Kstjdn9Jtnmh7ILkD4X%2BB0RNu8YM7rIAPdQI5SLqyM%3D\"}",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-ESB-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-REQUESTID",
+						"value": "${=java.util.UUID.randomUUID().toString()}",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "eTag",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numberOfVerifierId\": 1300\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.246.89.245:10450/pbdsrv/api/v6/verifier/verifierread",
+					"protocol": "http",
+					"host": [
+						"10",
+						"246",
+						"89",
+						"245"
+					],
+					"port": "10450",
+					"path": [
+						"pbdsrv",
+						"api",
+						"v6",
+						"verifier",
+						"verifierread"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read Copy",
+			"id": "27851672-f153c532-6fa1-489d-aa72-5b57d8bfca84",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-EVRY-DATAOWNERORGID",
+						"value": "2544",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-usersession",
+						"value": "{\"bankOrgID\": \"2544\",\"userID\": \"e211732\",\"client\": {\"ip\":\"10.10.10.10\"} }",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-securitytoken",
+						"value": "{\"tokenType\": \"EvrySo\", \"token\": \"031110130104004250tu4YEEzPmBtrqnqspzaepmTJZQe+Fzz/RASphHZEo9Vo+zq0WRhPZ/P3hY9BTDejrSIpQnXuqKD/MjoNuGS8Y6NSXSWqPOewBRj1uby9vKfCL5Urruo0hONdxZ1ICUePyX8iewyOYA19Dp2kOEGSVw9t5XJ2AbQIeuh+FQuo761gSbV8PL7TnEYVTVAJx4r68CQtGWcP1JJdSy2emkS3xHQXosP20Jg9/p5TfEk7KY=hPaW8TS383Thxvlf6vcBoBgBG1ze3QkjkFcMjkvRsoc466hX5PxrNBdDrop/49IIYuGF+KMR7CmZhSPFB/oHP5wiXZX4S4qohu3nDXid3L60Tlp87i3o03bj1KYx7DF61J7wUMJV7toXpn2nBq9raxj2t21FEFF8ocA6gBLN2R0=\"}",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-ESB-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-REQUESTID",
+						"value": "${=java.util.UUID.randomUUID().toString()}",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "eTag",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numberOfVerifierId\": 34      \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.246.89.245:10780/pbdsrv/api/v6/verifier/verifierread",
+					"protocol": "http",
+					"host": [
+						"10",
+						"246",
+						"89",
+						"245"
+					],
+					"port": "10780",
+					"path": [
+						"pbdsrv",
+						"api",
+						"v6",
+						"verifier",
+						"verifierread"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"id": "27851672-111ceaea-b6d7-4a3a-a94e-2d6bf4591132",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-EVRY-DATAOWNERORGID",
+						"value": "4201",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-usersession",
+						"value": "{\"bankOrgID\": \"4201\",\"userID\": \"e220102\",\"client\": {\"ip\":\"10.10.10.10\"} }",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-securitytoken",
+						"value": "{\"tokenType\": \"EvrySo\", \"token\": \"03111012010400425kglPboRi3h1Q0wGJvxDnjLEmmmyjbdrfsSaabKNt2t%2BCqK3eX2EphONTCSUcmn1BsSaabKNt2t%2BxJppso23a37EmmmyjbdrfyqVfESZ%2BvdaEdNM4lOx0RzgSxAz1%2B8eEsSaabKNt2t%2FXzlyjxYnxhcG46wcbIKp%2FsSaabKNt2t9wBUG0SyIoqFfig80Gq4uXVBtimDzTiu3EfQIWD5xMfk2jSY2FGfvV26qFHJXpC08%3DRScZIBaF5rVbaSQXdfjW7qpDd%2Fx6Uv7yZLZhCUf3MZQpUdJt1NcsZDOjPzj%2FxNUr4iwU0MZPvSc40rnfiJVGhX6lz1BFMma9XVgKg5SRUqBh2Vd0hQRhPCN3LcKOZ%2B4Q6Kstjdn9Jtnmh7ILkD4X%2BB0RNu8YM7rIAPdQI5SLqyM%3D\"}",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-ESB-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-REQUESTID",
+						"value": "${=java.util.UUID.randomUUID().toString()}",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "eTag",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numberOfVerifierDetails\": {\r\n    // \"pk\": 0,\r\n    // \"version\": 0,\r\n    // \"numberOfVerifierId\": 0,\r\n    // \"bankName\": \"string\",\r\n    \"systemName\": \"Standing Orders\",\r\n    \"areaName\": \"Balance agreement\",\r\n    \"taskName\": \"Verify\",\r\n    \"numberOfVerifier\": 3,\r\n    // \"rangeAmountDetails\": {\r\n    //   \"rangeFromAmount\": 0,\r\n    //   \"rangeToAmount\": 0,\r\n    //   \"baseCurrencyCode\": \"string\",\r\n    //   \"rangeNumberOfVerifier\": 3\r\n    // },\r\n    \"startDate\": \"2024-10-11\",\r\n    \"endDate\": \"2024-10-12\",\r\n    \"changeStatus\": \"ALL\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.246.89.245:10450/pbdsrv/api/v6/verifier/verifiercreate",
+					"protocol": "http",
+					"host": [
+						"10",
+						"246",
+						"89",
+						"245"
+					],
+					"port": "10450",
+					"path": [
+						"pbdsrv",
+						"api",
+						"v6",
+						"verifier",
+						"verifiercreate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Copy",
+			"id": "27851672-651b3884-6292-48f2-b369-5d12ec79759f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-EVRY-DATAOWNERORGID",
+						"value": "4201",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-usersession",
+						"value": "{\"bankOrgID\": \"4201\",\"userID\": \"e220102\",\"client\": {\"ip\":\"10.10.10.10\"} }",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-securitytoken",
+						"value": "{\"tokenType\": \"EvrySo\", \"token\": \"03111012010400425kglPboRi3h1Q0wGJvxDnjLEmmmyjbdrfsSaabKNt2t%2BCqK3eX2EphONTCSUcmn1BsSaabKNt2t%2BxJppso23a37EmmmyjbdrfyqVfESZ%2BvdaEdNM4lOx0RzgSxAz1%2B8eEsSaabKNt2t%2FXzlyjxYnxhcG46wcbIKp%2FsSaabKNt2t9wBUG0SyIoqFfig80Gq4uXVBtimDzTiu3EfQIWD5xMfk2jSY2FGfvV26qFHJXpC08%3DRScZIBaF5rVbaSQXdfjW7qpDd%2Fx6Uv7yZLZhCUf3MZQpUdJt1NcsZDOjPzj%2FxNUr4iwU0MZPvSc40rnfiJVGhX6lz1BFMma9XVgKg5SRUqBh2Vd0hQRhPCN3LcKOZ%2B4Q6Kstjdn9Jtnmh7ILkD4X%2BB0RNu8YM7rIAPdQI5SLqyM%3D\"}",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-ESB-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-REQUESTID",
+						"value": "${=java.util.UUID.randomUUID().toString()}",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "eTag",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numberOfVerifierDetails\": {\r\n    //  \"numberOfVerifierId\": 1296,\r\n        \"systemName\": \"Standing Orders\",\r\n        \"areaName\": \"Balance agreement\",\r\n        \"taskName\": \"Verify\",\r\n        \"numberOfVerifier\": 0,\r\n        \"startDate\": \"2024-10-14\",\r\n        \"endDate\": \"2024-10-14\"\r\n        // \"changeStatus\": \"ACTIVE\"\r\n        // \"pk\": 1297,\r\n        // \"version\": 2\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.246.89.245:10450/pbdsrv/api/v6/verifier/verifiercreate",
+					"protocol": "http",
+					"host": [
+						"10",
+						"246",
+						"89",
+						"245"
+					],
+					"port": "10450",
+					"path": [
+						"pbdsrv",
+						"api",
+						"v6",
+						"verifier",
+						"verifiercreate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"id": "27851672-8c549cf0-acf0-4484-97be-f2092392ea07",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-EVRY-DATAOWNERORGID",
+						"value": "4201",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-usersession",
+						"value": "{\"bankOrgID\": \"4201\",\"userID\": \"e220102\",\"client\": {\"ip\":\"10.10.10.10\"} }",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-securitytoken",
+						"value": "{\"tokenType\": \"EvrySo\", \"token\": \"03111012010400425kglPboRi3h1Q0wGJvxDnjLEmmmyjbdrfsSaabKNt2t%2BCqK3eX2EphONTCSUcmn1BsSaabKNt2t%2BxJppso23a37EmmmyjbdrfyqVfESZ%2BvdaEdNM4lOx0RzgSxAz1%2B8eEsSaabKNt2t%2FXzlyjxYnxhcG46wcbIKp%2FsSaabKNt2t9wBUG0SyIoqFfig80Gq4uXVBtimDzTiu3EfQIWD5xMfk2jSY2FGfvV26qFHJXpC08%3DRScZIBaF5rVbaSQXdfjW7qpDd%2Fx6Uv7yZLZhCUf3MZQpUdJt1NcsZDOjPzj%2FxNUr4iwU0MZPvSc40rnfiJVGhX6lz1BFMma9XVgKg5SRUqBh2Vd0hQRhPCN3LcKOZ%2B4Q6Kstjdn9Jtnmh7ILkD4X%2BB0RNu8YM7rIAPdQI5SLqyM%3D\"}",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-ESB-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-REQUESTID",
+						"value": "${=java.util.UUID.randomUUID().toString()}",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "eTag",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numberOfVerifierDetails\": {\r\n   \"numberOfVerifierId\": 1300,\r\n        \"systemName\": \"Standing Orders\",\r\n        \"areaName\": \"Balance agreement\",\r\n        \"taskName\": \"Verify\",\r\n        \"numberOfVerifier\": 0,\r\n        \"startDate\": \"2024-10-15\",\r\n        \"endDate\": \"2024-10-15\",\r\n        \"changeStatus\": \"ACTIVE\",\r\n        \"pk\": 1305,\r\n        \"version\": 4\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.246.89.245:10450/pbdsrv/api/v6/verifier/verifierupdate",
+					"protocol": "http",
+					"host": [
+						"10",
+						"246",
+						"89",
+						"245"
+					],
+					"port": "10450",
+					"path": [
+						"pbdsrv",
+						"api",
+						"v6",
+						"verifier",
+						"verifierupdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Copy",
+			"id": "27851672-1c5e6a7f-cfb9-478b-85a7-dd5d44e6a38f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-EVRY-DATAOWNERORGID",
+						"value": "4201",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-usersession",
+						"value": "{\"bankOrgID\": \"4201\",\"userID\": \"e220102\",\"client\": {\"ip\":\"10.10.10.10\"} }",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-securitytoken",
+						"value": "{\"tokenType\": \"EvrySo\", \"token\": \"03111012010400425kglPboRi3h1Q0wGJvxDnjLEmmmyjbdrfsSaabKNt2t%2BCqK3eX2EphONTCSUcmn1BsSaabKNt2t%2BxJppso23a37EmmmyjbdrfyqVfESZ%2BvdaEdNM4lOx0RzgSxAz1%2B8eEsSaabKNt2t%2FXzlyjxYnxhcG46wcbIKp%2FsSaabKNt2t9wBUG0SyIoqFfig80Gq4uXVBtimDzTiu3EfQIWD5xMfk2jSY2FGfvV26qFHJXpC08%3DRScZIBaF5rVbaSQXdfjW7qpDd%2Fx6Uv7yZLZhCUf3MZQpUdJt1NcsZDOjPzj%2FxNUr4iwU0MZPvSc40rnfiJVGhX6lz1BFMma9XVgKg5SRUqBh2Vd0hQRhPCN3LcKOZ%2B4Q6Kstjdn9Jtnmh7ILkD4X%2BB0RNu8YM7rIAPdQI5SLqyM%3D\"}",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-ESB-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-REQUESTID",
+						"value": "${=java.util.UUID.randomUUID().toString()}",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "eTag",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numberOfVerifierDetails\": {\r\n    \"pk\": 0,\r\n    \"version\": 0,\r\n    \"numberOfVerifierId\": 0,\r\n    \"bankName\": \"string\",\r\n    \"systemName\": \"string\",\r\n    \"areaName\": \"string\",\r\n    \"taskName\": \"string\",\r\n    \"numberOfVerifier\": 3,\r\n    \"rangeAmountDetails\": {\r\n      \"rangeFromAmount\": 0,\r\n      \"rangeToAmount\": 0,\r\n      \"baseCurrencyCode\": \"string\",\r\n      \"rangeNumberOfVerifier\": 3\r\n    },\r\n    \"startDate\": \"2024-08-01\",\r\n    \"endDate\": \"2024-08-01\",\r\n    \"changeStatus\": \"ALL\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.246.89.245:10450/pbdsrv/api/v6/verifier/verifierupdate",
+					"protocol": "http",
+					"host": [
+						"10",
+						"246",
+						"89",
+						"245"
+					],
+					"port": "10450",
+					"path": [
+						"pbdsrv",
+						"api",
+						"v6",
+						"verifier",
+						"verifierupdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"id": "27851672-93fd4b6c-072d-4c9e-90e2-92f5ff5d8825",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-EVRY-DATAOWNERORGID",
+						"value": "4201",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-usersession",
+						"value": "{\"bankOrgID\": \"4201\",\"userID\": \"e220102\",\"client\": {\"ip\":\"10.10.10.10\"} }",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-securitytoken",
+						"value": "{\"tokenType\": \"EvrySo\", \"token\": \"03111012010400425kglPboRi3h1Q0wGJvxDnjLEmmmyjbdrfsSaabKNt2t%2BCqK3eX2EphONTCSUcmn1BsSaabKNt2t%2BxJppso23a37EmmmyjbdrfyqVfESZ%2BvdaEdNM4lOx0RzgSxAz1%2B8eEsSaabKNt2t%2FXzlyjxYnxhcG46wcbIKp%2FsSaabKNt2t9wBUG0SyIoqFfig80Gq4uXVBtimDzTiu3EfQIWD5xMfk2jSY2FGfvV26qFHJXpC08%3DRScZIBaF5rVbaSQXdfjW7qpDd%2Fx6Uv7yZLZhCUf3MZQpUdJt1NcsZDOjPzj%2FxNUr4iwU0MZPvSc40rnfiJVGhX6lz1BFMma9XVgKg5SRUqBh2Vd0hQRhPCN3LcKOZ%2B4Q6Kstjdn9Jtnmh7ILkD4X%2BB0RNu8YM7rIAPdQI5SLqyM%3D\"}",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-ESB-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-REQUESTID",
+						"value": "${=java.util.UUID.randomUUID().toString()}",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "eTag",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"version\": 4,\r\n  \"refId\": 1300,\r\n  \"deleteFuture\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.246.89.245:10450/pbdsrv/api/v6/verifier/verifierdelete",
+					"protocol": "http",
+					"host": [
+						"10",
+						"246",
+						"89",
+						"245"
+					],
+					"port": "10450",
+					"path": [
+						"pbdsrv",
+						"api",
+						"v6",
+						"verifier",
+						"verifierdelete"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "27851672-856d5cbb-069a-46ea-8a1b-9d624a1cd7d5",
+					"name": "delete",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-EVRY-DATAOWNERORGID",
+								"value": "4201",
+								"type": "text"
+							},
+							{
+								"key": "x-evry-esb-usersession",
+								"value": "{\"bankOrgID\": \"4201\",\"userID\": \"e220102\",\"client\": {\"ip\":\"10.10.10.10\"} }",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-evry-esb-securitytoken",
+								"value": "{\"tokenType\": \"EvrySo\", \"token\": \"03111012010400425kglPboRi3h1Q0wGJvxDnjLEmmmyjbdrfsSaabKNt2t%2BCqK3eX2EphONTCSUcmn1BsSaabKNt2t%2BxJppso23a37EmmmyjbdrfyqVfESZ%2BvdaEdNM4lOx0RzgSxAz1%2B8eEsSaabKNt2t%2FXzlyjxYnxhcG46wcbIKp%2FsSaabKNt2t9wBUG0SyIoqFfig80Gq4uXVBtimDzTiu3EfQIWD5xMfk2jSY2FGfvV26qFHJXpC08%3DRScZIBaF5rVbaSQXdfjW7qpDd%2Fx6Uv7yZLZhCUf3MZQpUdJt1NcsZDOjPzj%2FxNUr4iwU0MZPvSc40rnfiJVGhX6lz1BFMma9XVgKg5SRUqBh2Vd0hQRhPCN3LcKOZ%2B4Q6Kstjdn9Jtnmh7ILkD4X%2BB0RNu8YM7rIAPdQI5SLqyM%3D\"}",
+								"type": "text"
+							},
+							{
+								"key": "X-EVRY-ESB-CLIENTNAME",
+								"value": "pen",
+								"type": "text"
+							},
+							{
+								"key": "X-EVRY-CLIENT-CLIENTNAME",
+								"value": "pen",
+								"type": "text"
+							},
+							{
+								"key": "X-EVRY-CLIENT-REQUESTID",
+								"value": "${=java.util.UUID.randomUUID().toString()}",
+								"type": "text"
+							},
+							{
+								"key": "content-language",
+								"value": "en",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "eTag",
+								"value": "2",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"version\": 11,\r\n  \"refId\": 1182,\r\n  \"deleteFuture\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.246.89.245:10450/pbdsrv/api/v6/verifier/verifierdelete",
+							"protocol": "http",
+							"host": [
+								"10",
+								"246",
+								"89",
+								"245"
+							],
+							"port": "10450",
+							"path": [
+								"pbdsrv",
+								"api",
+								"v6",
+								"verifier",
+								"verifierdelete"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Aug 2024 07:05:38 GMT"
+						},
+						{
+							"key": "X-sorp",
+							"value": "e220102;4201;-;pen;http://10.246.89.245:10450/pbdsrv/api/v6;verifier/verifierdelete;-;${=java.util.UUID.randomUUID().toString()};-;-;false"
+						},
+						{
+							"key": "Digest",
+							"value": "SHA-256=veN8o5p6inbUKpXbHCAz0d54RaOKP1GVWCes8hYJJEg="
+						},
+						{
+							"key": "Signature",
+							"value": "keyId=\"dc2ccd1e2341ebd5cb34f007d23defe9f0605b7602e0e87a29d32252a4e23fb6\",algorithm=\"ecdsa-sha256\",headers=\"x-sorp digest date content-type\",signature=\"MEYCIQDXExSV1EQ+lywqkSCbVECThtQ6dJ75tL6LwE72KsR9sgIhANoSX9i1qW5aBAxAT6jBaXYFDNpZ52ztAfVOa0tocGbD\""
+						},
+						{
+							"key": "Content-Length",
+							"value": "154"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.4.44.v20210927)"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"ResponseState\": {\n        \"ErrorCode\": 0,\n        \"Severity\": 0,\n        \"ComponentId\": 103,\n        \"StrErrorCode\": null,\n        \"Message\": \"OK\",\n        \"NativeError\": null,\n        \"LogSequence\": null,\n        \"errorItem\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "delete Copy",
+			"id": "27851672-989f47d0-41b8-481a-9417-6f04f9558cbc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-EVRY-DATAOWNERORGID",
+						"value": "2544",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-usersession",
+						"value": "{\"bankOrgID\": \"2544\",\"userID\": \"e211732\",\"client\": {\"ip\":\"10.10.10.10\"} }",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-evry-esb-securitytoken",
+						"value": "{\"tokenType\": \"EvrySo\", \"token\": \"031110130104004250tu4YEEzPmBtrqnqspzaepmTJZQe+Fzz/RASphHZEo9Vo+zq0WRhPZ/P3hY9BTDejrSIpQnXuqKD/MjoNuGS8Y6NSXSWqPOewBRj1uby9vKfCL5Urruo0hONdxZ1ICUePyX8iewyOYA19Dp2kOEGSVw9t5XJ2AbQIeuh+FQuo761gSbV8PL7TnEYVTVAJx4r68CQtGWcP1JJdSy2emkS3xHQXosP20Jg9/p5TfEk7KY=hPaW8TS383Thxvlf6vcBoBgBG1ze3QkjkFcMjkvRsoc466hX5PxrNBdDrop/49IIYuGF+KMR7CmZhSPFB/oHP5wiXZX4S4qohu3nDXid3L60Tlp87i3o03bj1KYx7DF61J7wUMJV7toXpn2nBq9raxj2t21FEFF8ocA6gBLN2R0=\"}",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-ESB-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-CLIENTNAME",
+						"value": "pen",
+						"type": "text"
+					},
+					{
+						"key": "X-EVRY-CLIENT-REQUESTID",
+						"value": "${=java.util.UUID.randomUUID().toString()}",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "eTag",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"version\": 2,\r\n  \"refId\": 33,\r\n  \"deleteFuture\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.246.89.245:10780/pbdsrv/api/v6/verifier/verifierdelete",
+					"protocol": "http",
+					"host": [
+						"10",
+						"246",
+						"89",
+						"245"
+					],
+					"port": "10780",
+					"path": [
+						"pbdsrv",
+						"api",
+						"v6",
+						"verifier",
+						"verifierdelete"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "27851672-2a8b22b1-abe0-4907-9e66-59b217c7d60e",
+					"name": "delete",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-EVRY-DATAOWNERORGID",
+								"value": "4201",
+								"type": "text"
+							},
+							{
+								"key": "x-evry-esb-usersession",
+								"value": "{\"bankOrgID\": \"4201\",\"userID\": \"e220102\",\"client\": {\"ip\":\"10.10.10.10\"} }",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-evry-esb-securitytoken",
+								"value": "{\"tokenType\": \"EvrySo\", \"token\": \"03111012010400425kglPboRi3h1Q0wGJvxDnjLEmmmyjbdrfsSaabKNt2t%2BCqK3eX2EphONTCSUcmn1BsSaabKNt2t%2BxJppso23a37EmmmyjbdrfyqVfESZ%2BvdaEdNM4lOx0RzgSxAz1%2B8eEsSaabKNt2t%2FXzlyjxYnxhcG46wcbIKp%2FsSaabKNt2t9wBUG0SyIoqFfig80Gq4uXVBtimDzTiu3EfQIWD5xMfk2jSY2FGfvV26qFHJXpC08%3DRScZIBaF5rVbaSQXdfjW7qpDd%2Fx6Uv7yZLZhCUf3MZQpUdJt1NcsZDOjPzj%2FxNUr4iwU0MZPvSc40rnfiJVGhX6lz1BFMma9XVgKg5SRUqBh2Vd0hQRhPCN3LcKOZ%2B4Q6Kstjdn9Jtnmh7ILkD4X%2BB0RNu8YM7rIAPdQI5SLqyM%3D\"}",
+								"type": "text"
+							},
+							{
+								"key": "X-EVRY-ESB-CLIENTNAME",
+								"value": "pen",
+								"type": "text"
+							},
+							{
+								"key": "X-EVRY-CLIENT-CLIENTNAME",
+								"value": "pen",
+								"type": "text"
+							},
+							{
+								"key": "X-EVRY-CLIENT-REQUESTID",
+								"value": "${=java.util.UUID.randomUUID().toString()}",
+								"type": "text"
+							},
+							{
+								"key": "content-language",
+								"value": "en",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "eTag",
+								"value": "2",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"version\": 11,\r\n  \"refId\": 1182,\r\n  \"deleteFuture\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.246.89.245:10450/pbdsrv/api/v6/verifier/verifierdelete",
+							"protocol": "http",
+							"host": [
+								"10",
+								"246",
+								"89",
+								"245"
+							],
+							"port": "10450",
+							"path": [
+								"pbdsrv",
+								"api",
+								"v6",
+								"verifier",
+								"verifierdelete"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Aug 2024 07:05:38 GMT"
+						},
+						{
+							"key": "X-sorp",
+							"value": "e220102;4201;-;pen;http://10.246.89.245:10450/pbdsrv/api/v6;verifier/verifierdelete;-;${=java.util.UUID.randomUUID().toString()};-;-;false"
+						},
+						{
+							"key": "Digest",
+							"value": "SHA-256=veN8o5p6inbUKpXbHCAz0d54RaOKP1GVWCes8hYJJEg="
+						},
+						{
+							"key": "Signature",
+							"value": "keyId=\"dc2ccd1e2341ebd5cb34f007d23defe9f0605b7602e0e87a29d32252a4e23fb6\",algorithm=\"ecdsa-sha256\",headers=\"x-sorp digest date content-type\",signature=\"MEYCIQDXExSV1EQ+lywqkSCbVECThtQ6dJ75tL6LwE72KsR9sgIhANoSX9i1qW5aBAxAT6jBaXYFDNpZ52ztAfVOa0tocGbD\""
+						},
+						{
+							"key": "Content-Length",
+							"value": "154"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.4.44.v20210927)"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"ResponseState\": {\n        \"ErrorCode\": 0,\n        \"Severity\": 0,\n        \"ComponentId\": 103,\n        \"StrErrorCode\": null,\n        \"Message\": \"OK\",\n        \"NativeError\": null,\n        \"LogSequence\": null,\n        \"errorItem\": null\n    }\n}"
+				}
+			]
+		}
+	]
+}
