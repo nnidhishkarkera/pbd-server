@@ -3724,7 +3724,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/wbrule?page-token=1&page-size=500&order-by=START_DATE&order-in=asc&direction=INWARD",
+							"raw": "{{baseUrl}}/wbrule?page-token=1&page-size=500&order-in=desc&direction=INWARD",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -3742,11 +3742,12 @@
 								},
 								{
 									"key": "order-by",
-									"value": "START_DATE"
+									"value": "START_DATE",
+									"disabled": true
 								},
 								{
 									"key": "order-in",
-									"value": "asc"
+									"value": "desc"
 								},
 								{
 									"key": "code",
