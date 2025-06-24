@@ -3724,7 +3724,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/wbrule?page-token=1&page-size=500&order-in=desc&direction=INWARD",
+							"raw": "{{baseUrl}}/wbrule?direction=INWARD&page-size=500&order-in=asc",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -3733,50 +3733,85 @@
 							],
 							"query": [
 								{
-									"key": "page-token",
-									"value": "1"
-								},
-								{
-									"key": "page-size",
-									"value": "500"
-								},
-								{
-									"key": "order-by",
-									"value": "START_DATE",
+									"key": "code",
+									"value": "quis tempor mollit voluptate aliquip",
+									"type": "text",
 									"disabled": true
 								},
 								{
-									"key": "order-in",
-									"value": "desc"
-								},
-								{
-									"key": "code",
-									"value": "WARNING",
+									"key": "itemValue",
+									"value": "dolor aute velit elit adipis",
+									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "status",
-									"value": "INACTIVE",
+									"value": "quis tempor mollit voluptate aliquip",
+									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "currencyCode",
 									"value": "NOK",
+									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "countryUnionCode",
 									"value": "NO",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "internalDescription",
+									"value": "dsdssxcsz",
+									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "direction",
-									"value": "INWARD"
+									"value": "INWARD",
+									"type": "text"
 								},
 								{
 									"key": "intermediaryBankPresent",
 									"value": "true",
+									"type": "text",
 									"disabled": true
+								},
+								{
+									"key": "startDate",
+									"value": "0025-07-13",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "page-token",
+									"value": "2",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "page-size",
+									"value": "500",
+									"type": "text"
+								},
+								{
+									"key": "order-by",
+									"value": "START_DATE",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "order-in",
+									"value": "asc",
+									"type": "text"
 								}
 							]
 						},
