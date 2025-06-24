@@ -3724,7 +3724,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/wbrule?page-token=1&page-size=500&order-by=START_DATE&order-in=asc&code=WARNING&status=INACTIVE&currencyCode=NOK&countryUnionCode=NO&direction=INWARD&intermediaryBankPresent=true",
+							"raw": "{{baseUrl}}/wbrule?page-token=1&page-size=500&order-by=START_DATE&order-in=asc&direction=INWARD",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -3750,19 +3750,23 @@
 								},
 								{
 									"key": "code",
-									"value": "WARNING"
+									"value": "WARNING",
+									"disabled": true
 								},
 								{
 									"key": "status",
-									"value": "INACTIVE"
+									"value": "INACTIVE",
+									"disabled": true
 								},
 								{
 									"key": "currencyCode",
-									"value": "NOK"
+									"value": "NOK",
+									"disabled": true
 								},
 								{
 									"key": "countryUnionCode",
-									"value": "NO"
+									"value": "NO",
+									"disabled": true
 								},
 								{
 									"key": "direction",
@@ -3770,7 +3774,8 @@
 								},
 								{
 									"key": "intermediaryBankPresent",
-									"value": "true"
+									"value": "true",
+									"disabled": true
 								}
 							]
 						},
