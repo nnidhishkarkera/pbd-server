@@ -56,7 +56,7 @@
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/jso",
+								"value": "application/json",
 								"description": "Identifies the person or system initiating the request.\nNormally this field is set equally to customerid, but should be set to the id of Employee/Agent/Retail/System if request is initiated on behalf of the customerid.\n* Private user accessing his own data: SSN (Social Security Number) of the user\n* Corporate user accessing data of a corporate customer: SSN (Social Security Number) of the user\n* Branch bank employee accessing data of a customer: Logonid of the bank employee\n",
 								"type": "text"
 							},
