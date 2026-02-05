@@ -3724,7 +3724,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/wbrule?direction=INWARD&page-size=500&order-in=asc",
+							"raw": "{{baseUrl}}/wbrule?page-token=19&page-size=500&order-in=asc",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -3770,8 +3770,8 @@
 								},
 								{
 									"key": "direction",
-									"value": "INWARD",
-									"type": "text"
+									"value": "OUTWARD",
+									"disabled": true
 								},
 								{
 									"key": "intermediaryBankPresent",
@@ -3793,14 +3793,11 @@
 								},
 								{
 									"key": "page-token",
-									"value": "2",
-									"type": "text",
-									"disabled": true
+									"value": "19"
 								},
 								{
 									"key": "page-size",
-									"value": "500",
-									"type": "text"
+									"value": "500"
 								},
 								{
 									"key": "order-by",
@@ -3810,8 +3807,7 @@
 								},
 								{
 									"key": "order-in",
-									"value": "asc",
-									"type": "text"
+									"value": "asc"
 								}
 							]
 						},
